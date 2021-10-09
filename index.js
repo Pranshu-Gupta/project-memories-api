@@ -11,7 +11,7 @@ app.use(express.urlencoded({ limit: '30mb', extended: true }));
 app.use(cors());
 app.use('/posts', postRoutes);
 app.get('/', (req, res) => {
-  res.json('Welcome to memories API!');
+  res.json('Welcome to memories API!!!');
 });
 const CONNECTION_URL =
   'mongodb+srv://pranshugupta:PRANSHUg2@cluster0.4j2bj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
