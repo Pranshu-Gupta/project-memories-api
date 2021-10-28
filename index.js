@@ -1,5 +1,4 @@
 import express from 'express';
-import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import cors from 'cors';
 import postRoutes from './routes/posts.js';
@@ -13,7 +12,7 @@ app.use(express.urlencoded({ limit: '30mb', extended: true }));
 app.use(cors());
 
 app.use('/posts', postRoutes);
-app.use('/user',userRoutes);
+app.use('/user', userRoutes);
 
 app.get('/', (req, res) => {
   res.json('Welcome to memories API!!!');
