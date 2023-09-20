@@ -28,3 +28,5 @@ mongoose
     app.listen(PORT, () => console.log(`Server on running on port: ${PORT}`))
   )
   .catch((error) => console.log(error));
+
+export default app;
